@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("assets/fonts/JetBrainsMono-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: normal;
+}
+
+.JetBrains {
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 400;
+  font-size: 0.7em;
+  color: rgba(var(--bs-body-color-rgb), 0.85);
+}
+
+.JetBrainsHeader {
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.JetBrainsVersionen {
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.JetBrainsFooter {
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 400;
+  font-size: 0.74em;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main#gameArea {
+  flex: 1;
+  position: relative;
+  background: var(--bs-body-bg);
+  overflow: hidden;
+}
+
+header,
+footer {
+  background-color: var(--bs-body-bg);
+  border-bottom: 1px solid var(--bs-border-color-translucent);
+  border-top: 1px solid var(--bs-border-color-translucent);
+  padding: 0.75rem 1rem;
+}
+
+#gameArea {
+  position: relative;
+  height: calc(100vh - 112px);
+  background: var(--bs-body-bg);
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+#pixel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  z-index: 10;
+}
+
+.toast-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1055;
+}
+
+.custom-link {
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--bs-body-color-rgb), 0.5);
+  color: rgba(var(--bs-body-color-rgb), 0.85);
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+.modal-close-button {
+  background-color: var(--bs-body-bg);
+  /* Modal-Farbe */
+  border: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  /* vertikal */
+  justify-content: center;
+  /* horizontal */
+  padding: 0;
+  overflow: hidden;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  background-color: var(--bs-body-bg);
+  box-shadow: none;
+}
+
+.modal-close-button svg {
+  width: 28px;
+  height: 28px;
+  color: var(--bs-body-color);
+}
+
+.modal-times-wrapper {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin-top: -50px;
+  /* Bild ragt oben aus dem Modal */
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Globales SVG-Styling */
+
+.svg-icon,
+.icon {
+  height: 1em;
+  width: 1em;
+  vertical-align: -0.125em;
+}
+
+.bd-mode-toggle .bi {
+  width: 1em;
+  height: 1em;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
