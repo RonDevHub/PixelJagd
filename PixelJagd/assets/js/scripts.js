@@ -156,29 +156,3 @@ let found = false;
           return new bootstrap.Tooltip(tooltipTriggerEl)
         })
       })
-
-      document.addEventListener('DOMContentLoaded', function() {
-        const toggleButton = document.getElementById('toggleMenu');
-        const offcanvas = document.getElementById('customOffcanvas');
-        const closeButton = document.getElementById('closeOffcanvas');
-        
-        toggleButton.addEventListener('click', function() {
-          offcanvas.classList.toggle('active');
-          document.body.classList.toggle('body-shift');
-          
-          // Buttontext wechseln
-          if (offcanvas.classList.contains('active')) {
-            toggleButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 389.24"><path fill-rule="nonzero" d="M0 0h275.1v50.04H0V0zm361.79 115.14 54.44 54.44H0v50.04h416.2l-54.41 54.41 35.39 35.39L512 194.6v-.03l-35.39-35.36-79.43-79.46-35.39 35.39zM0 339.2h275.1v50.04H0V339.2z"/></svg>';
-          } else {
-            toggleButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 389.24"><path fill-rule="nonzero" d="M512 50.04H236.9V0H512v50.04zm-361.79 65.1-54.45 54.44H512v50.04H95.79l54.42 54.41-35.39 35.39L0 194.6v-.03l35.39-35.36 79.43-79.46 35.39 35.39zM512 389.24H236.9V339.2H512v50.04z"/></svg>';
-          }
-        });
-      
-        // Neu: Close-Button
-        closeButton.addEventListener('click', function() {
-          offcanvas.classList.remove('active');
-          document.body.classList.remove('body-shift');
-          toggleButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 389.24"><path fill-rule="nonzero" d="M512 50.04H236.9V0H512v50.04zm-361.79 65.1-54.45 54.44H512v50.04H95.79l54.42 54.41-35.39 35.39L0 194.6v-.03l35.39-35.36 79.43-79.46 35.39 35.39zM512 389.24H236.9V339.2H512v50.04z"/></svg>'; // Buttontext zurücksetzen
-        });
-      });
-      

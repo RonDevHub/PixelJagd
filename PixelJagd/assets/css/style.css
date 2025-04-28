@@ -1,6 +1,7 @@
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("../fonts/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/JetBrainsMono-VariableFont_wght.ttf")
+    format("truetype");
   font-style: normal;
 }
 
@@ -93,7 +94,7 @@ footer {
 .modal-close-button {
   background-color: var(--bs-body-bg) !important;
   /* Modal-Farbe */
-  border: none !important;
+  border: none !importantv;
   box-shadow: none !important;
   display: flex !important;
   align-items: center !important;
@@ -143,76 +144,4 @@ footer {
 
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
-}
-
-/* Offcanvas Basis */
-.offcanvas-custom {
-  position: fixed;
-  top: 0;
-  right: -400px;
-  width: 400px;
-  height: 100%;
-  background-color: var(--bs-body-bg);
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
-  transition: right 0.3s ease;
-  z-index: 1050;
-}
-
-.offcanvas-custom.active {
-  right: 0;
-}
-
-/* Standardmäßig: Body NICHT verschieben auf kleinen Bildschirmen */
-.body-shift {
-  transition: margin-right 0.3s ease;
-}
-
-/* Nur auf DESKTOP verschieben */
-@media (min-width: 768px) {
-  .body-shift {
-    margin-right: 400px;
-  }
-}
-
-.icon-container {
-  width: 2.2em; /* Einheitliche Icon-Box */
-  height: 2.2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.text-container {
-  margin-left: 0.5em;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-}
-
-.menu-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-  transition: background-color 0.3s ease;
-  padding: 0.5em 0;
-}
-
-.menu-link:hover {
-  background-color: rgba(0, 0, 0, 0.05); /* leichtes Hover-Highlight */
-}
-
-.menu-link:hover .icon-container {
-  transform: scale(1.2); /* Icon leicht vergrößern */
-  color: #0d6efd; /* Bootstrap-Primary oder deine Wunschfarbe */
-}
-
-.profil-image {
-  height: 6em;
-  z-index: 2;
-  background: transparent;
 }

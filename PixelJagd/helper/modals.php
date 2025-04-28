@@ -27,8 +27,8 @@
       </div>
       <div class="modal-body JetBrainsVersionen">
         <p class="fw-semibold mb-0">Version 0.1</p>
-        <p class="fw-light mb-0"><?= bug('1.2em', '#ff322e', 'me-1', 'Aktueller Bug'); ?>Bug aktuell</p>
-        <p class="fw-light mb-0"><?= bug('1.2em', '#7fbb00', 'me-1', 'Bug behoben'); ?>Bug behoben</p>
+        <p class="fw-light mb-0"><?= bug('1.2em', '1.2em', '#ff322e', 'me-1', 'Aktueller Bug'); ?>Bug aktuell</p>
+        <p class="fw-light mb-0"><?= bug('1.2em', '1.2em', '#7fbb00', 'me-1', 'Bug behoben'); ?>Bug behoben</p>
       </div>
       <div class="modal-footer fw-lighter JetBrainsFooter">
         <p>Diese Webseite ist seit <span class="fw-bold onlineZeit"></span> online.</p>
@@ -92,10 +92,10 @@
           07629 Hermsdorf<br>
           <br>
           <span class="fw-semibold">Kontakt</span><br>
-          E-Mail: <?= email('1em', 'currentColor'); ?>
+          E-Mail: <?= email('10.5em', '', 'currentColor'); ?>
         </p>
         <p class="fw-light text-danger-emphasis lh-1 small">
-          Die Nutzung der angegebenen Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung, Spam-E-Mails oder sonstigen unerwünschten Nachrichten ist ausdrücklich untersagt. Bei Verstößen gegen dieses Verbot behalte ich mir rechtliche Schritte vor.
+        Die Nutzung der angegebenen Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung, Spam-E-Mails oder sonstigen unerwünschten Nachrichten ist ausdrücklich untersagt. Bei Verstößen gegen dieses Verbot behalte ich mir rechtliche Schritte vor.
         </p>
       </div>
       <div class="modal-footer fw-lighter JetBrainsFooter">
