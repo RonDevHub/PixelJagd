@@ -1,0 +1,158 @@
+let found = false;
+
+    const pixel = document.getElementById('pixel');
+    const gameArea = document.getElementById('gameArea');
+    const areaRect = gameArea.getBoundingClientRect();
+    const posX = Math.floor(Math.random() * (areaRect.width - 1));
+    const posY = Math.floor(Math.random() * (areaRect.height - 1));
+    pixel.style.left = `${posX}px`;
+    pixel.style.top = `${posY}px`;
+
+    pixel.addEventListener('click', (e) => {
+      e.stopPropagation();
+      found = true;
+      const modal = new bootstrap.Modal(document.getElementById('foundModal'));
+      modal.show();
+    });
+
+    gameArea.addEventListener('click', (e) => {
+      if (!found && e.target !== pixel) {
+        showToast("Da bin ich nicht – such weiter!");
+      }
+    });
+
+    // Toast Funktion
+    function showToast(message) {
+      const toastContainer = document.getElementById('toastContainer');
+      toastContainer.innerHTML = ''; // Alte Toasts vorher entfernen
+
+      const toast = document.createElement('div');
+      toast.className = 'toast align-items-center text-white bg-primary bg-opacity-75 bg-gradient border-0';
+      toast.role = 'alert';
+      toast.ariaLive = 'assertive';
+      toast.ariaAtomic = 'true';
+      toast.innerHTML = `
+    <div class="d-flex">
+      <div class="toast-body">${message}</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>`;
+
+      toastContainer.appendChild(toast);
+      const bsToast = new bootstrap.Toast(toast);
+      bsToast.show();
+    }
+
+    function berechneOnlineZeit(startDatumString) {
+        const startDatum = new Date(startDatumString);
+        const heute = new Date();
+        const differenzMs = heute.getTime() - startDatum.getTime();
+        const sekundenProTag = 1000 * 60 * 60 * 24;
+  
+        const differenzTage = Math.floor(differenzMs / sekundenProTag);
+  
+        if (differenzTage < 30) {
+          return `${differenzTage} Tag${differenzTage === 1 ? '' : 'en'}`;
+        } else if (differenzTage < 365) {
+          const differenzMonate = Math.floor(differenzTage / 30);
+          return `${differenzMonate} Monat${differenzMonate === 1 ? '' : 'en'}`;
+        } else {
+          const differenzJahre = Math.floor(differenzTage / 365.25);
+          return `${differenzJahre} Jahr${differenzJahre === 1 ? '' : 'en'}`;
+        }
+      }
+  
+      // Startdatum deiner Webseite
+      const startDatum = "2025-04-26";
+  
+      // Alle Elemente mit der Klasse "onlineZeit" auswählen
+      const onlineZeitElemente = document.querySelectorAll(".onlineZeit");
+  
+      // Über alle Elemente drübergehen und Text setzen
+      onlineZeitElemente.forEach(el => {
+        el.textContent = berechneOnlineZeit(startDatum);
+      });
+
+      (() => {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+        const getPreferredTheme = () => prefersDark.matches ? 'dark' : 'light';
+        const getStoredTheme = () => localStorage.getItem('theme');
+        const setStoredTheme = (theme) => localStorage.setItem('theme', theme);
+        const applyTheme = (theme) => {
+          const actualTheme = theme === 'auto' ? getPreferredTheme() : theme;
+          document.documentElement.setAttribute('data-bs-theme', actualTheme);
+        };
+        const updateActiveIcon = (theme) => {
+          const themeIcon = document.querySelector('.theme-icon-active use');
+          const activeTheme = theme === 'auto' ? getPreferredTheme() : theme;
+  
+          // Icons
+          const iconMap = {
+            light: '#sun-fill',
+            dark: '#moon-stars-fill',
+            auto: '#circle-half'
+          };
+  
+          // Set the correct icon in button
+          themeIcon.setAttribute('href', iconMap[theme]);
+  
+          // Set aria-pressed and check mark visibility
+          document.querySelectorAll('[data-bs-theme-value]').forEach(btn => {
+            const btnTheme = btn.getAttribute('data-bs-theme-value');
+            const isActive = btnTheme === theme;
+            btn.setAttribute('aria-pressed', isActive);
+            btn.querySelector('svg.ms-auto').classList.toggle('d-none', !isActive);
+          });
+        };
+  
+        const setTheme = (theme) => {
+          setStoredTheme(theme);
+          applyTheme(theme);
+          updateActiveIcon(theme);
+        };
+  
+        // Initial Theme Setup
+        const initTheme = () => {
+          const storedTheme = getStoredTheme() || 'auto';
+          applyTheme(storedTheme);
+          updateActiveIcon(storedTheme);
+        };
+  
+        // Listen for dropdown clicks
+        window.addEventListener('DOMContentLoaded', () => {
+          initTheme();
+          document.querySelectorAll('[data-bs-theme-value]').forEach(btn => {
+            btn.addEventListener('click', () => {
+              const theme = btn.getAttribute('data-bs-theme-value');
+              setTheme(theme);
+            });
+          });
+        });
+  
+        // Listen to system preference changes if auto is active
+        prefersDark.addEventListener('change', () => {
+          if (getStoredTheme() === 'auto') {
+            applyTheme('auto');
+            updateActiveIcon('auto');
+          }
+        });
+      })();
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const modals = document.querySelectorAll('.modal');
+  
+        modals.forEach(modal => {
+          modal.addEventListener('hide.bs.modal', () => {
+            if (document.activeElement && modal.contains(document.activeElement)) {
+              document.activeElement.blur();
+            }
+          });
+        });
+      });
+
+      // Tooltip erscheint nun auch bei anderen Objekten außer bei a & button Atributen
+      document.addEventListener('DOMContentLoaded', function() {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+      })

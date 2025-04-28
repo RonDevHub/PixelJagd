@@ -1,6 +1,6 @@
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("assets/fonts/JetBrainsMono-VariableFont_wght.ttf")
+  src: url("../fonts/JetBrainsMono-VariableFont_wght.ttf")
     format("truetype");
   font-style: normal;
 }
@@ -8,26 +8,26 @@
 .JetBrains {
   font-family: "JetBrains Mono", sans-serif;
   font-weight: 400;
-  font-size: 0.7em;
+  font-size: 0.7em !important;
   color: rgba(var(--bs-body-color-rgb), 0.85);
 }
 
 .JetBrainsHeader {
   font-family: "JetBrains Mono", sans-serif;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.2em !important;
 }
 
 .JetBrainsVersionen {
   font-family: "JetBrains Mono", sans-serif;
   font-weight: 400;
-  font-size: 0.9em;
+  font-size: 0.9em !important;
 }
 
 .JetBrainsFooter {
   font-family: "JetBrains Mono", sans-serif;
   font-weight: 400;
-  font-size: 0.74em;
+  font-size: 0.74em !important;
 }
 
 html,
@@ -92,40 +92,40 @@ footer {
 }
 
 .modal-close-button {
-  background-color: var(--bs-body-bg);
+  background-color: var(--bs-body-bg) !important;
   /* Modal-Farbe */
-  border: none;
-  box-shadow: none;
-  display: flex;
-  align-items: center;
+  border: none !importantv;
+  box-shadow: none !important;
+  display: flex !important;
+  align-items: center !important;
   /* vertikal */
-  justify-content: center;
+  justify-content: center !important;
   /* horizontal */
-  padding: 0;
-  overflow: hidden;
+  padding: 0 !important;
+  overflow: hidden !important;
 }
 
 .modal-close-button:hover,
 .modal-close-button:focus {
-  background-color: var(--bs-body-bg);
-  box-shadow: none;
+  background-color: var(--bs-body-bg) !important;
+  box-shadow: none !important;
 }
 
 .modal-close-button svg {
-  width: 28px;
-  height: 28px;
-  color: var(--bs-body-color);
+  width: 28px !important;
+  height: 28px !important;
+  color: var(--bs-body-color) !important;
 }
 
 .modal-times-wrapper {
-  position: relative;
-  width: 100%;
-  height: 20px;
-  margin-top: -50px;
+  position: relative !important;
+  width: 100% !important;
+  height: 20px !important;
+  margin-top: -50px !important;
   /* Bild ragt oben aus dem Modal */
-  display: flex;
-  justify-content: center;
-  z-index: 1;
+  display: flex !important;
+  justify-content: center !important;
+  z-index: 1 !important;
 }
 
 /* Globales SVG-Styling */
