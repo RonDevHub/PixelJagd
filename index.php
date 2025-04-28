@@ -24,7 +24,7 @@
 
 <header class="d-flex justify-content-between align-items-center px-3 py-2">
   <!-- Titel links -->
-  <span class="h5 m-0">🎯 PixelJagd</span>
+  <span class="h5 m-0"><?= sitelogo('5em', '', 'currentColor'); ?></span>
 
   <!-- Button-Container rechts -->
   <div class="d-flex align-items-center gap-3">
@@ -36,6 +36,7 @@
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#hilfeModal"><?= gamepad('1.6em', '1.6em', 'currentColor', 'me-1'); ?> Willkommen</a></li>
         <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#versionModal"><?= version('1.6em', '1.6em', 'currentColor', 'me-1'); ?> Versionen</a></li>
+        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#impressumModal"><?= version('1.6em', '1.6em', 'currentColor', 'me-1'); ?> Impressum</a></li>
       </ul>
     </div>
 
