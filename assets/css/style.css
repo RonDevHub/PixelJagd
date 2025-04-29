@@ -294,3 +294,49 @@ footer {
   background-color: #82cd01;
 }
 
+/* Animation Konfetti */
+.confetti-piece, .brand-icon {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 1;
+  will-change: transform, opacity;
+}
+
+.confetti-piece {
+  width: 8px;
+  height: 12px;
+  border-radius: 1px;
+  background-color: red;
+  animation: confetti-spray 2s ease-out forwards;
+}
+
+.brand-icon {
+  width: 24px;
+  height: 24px;
+  animation: brand-spray 2s ease-out forwards;
+}
+
+@keyframes confetti-spray {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes brand-spray {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) rotate(360deg) scale(0.8);
+    opacity: 0;
+  }
+}
+
+
