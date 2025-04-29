@@ -90,42 +90,7 @@ footer {
   }
 }
 
-.modal-close-button {
-  background-color: var(--bs-body-bg) !important;
-  /* Modal-Farbe */
-  border: none !important;
-  box-shadow: none !important;
-  display: flex !important;
-  align-items: center !important;
-  /* vertikal */
-  justify-content: center !important;
-  /* horizontal */
-  padding: 0 !important;
-  overflow: hidden !important;
-}
 
-.modal-close-button:hover,
-.modal-close-button:focus {
-  background-color: var(--bs-body-bg) !important;
-  box-shadow: none !important;
-}
-
-.modal-close-button svg {
-  width: 28px !important;
-  height: 28px !important;
-  color: var(--bs-body-color) !important;
-}
-
-.modal-times-wrapper {
-  position: relative !important;
-  width: 100% !important;
-  height: 20px !important;
-  margin-top: -50px !important;
-  /* Bild ragt oben aus dem Modal */
-  display: flex !important;
-  justify-content: center !important;
-  z-index: 1 !important;
-}
 
 /* Globales SVG-Styling */
 
@@ -274,3 +239,4 @@ footer {
     opacity: 0;
   }
 }
+

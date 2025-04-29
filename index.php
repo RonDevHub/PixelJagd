@@ -116,6 +116,16 @@
         </a>
       </li>
       <li>
+        <a class="dropdown-item d-flex align-items-center menu-link" href="#" data-bs-toggle="modal" data-bs-target="#thanksModal">
+          <div class="d-flex icon-container">
+            <?= inprint('1.5em', 'currentColor'); ?>
+          </div>
+          <div class="text-container">
+            Danke
+          </div>
+        </a>
+      </li>
+      <li>
         <a class="dropdown-item d-flex align-items-center menu-link" href="#" data-bs-toggle="modal" data-bs-target="#versionModal">
           <div class="d-flex icon-container">
             <?= version('1.5em', 'currentColor'); ?>
@@ -168,7 +178,7 @@
 
   <footer class="text-center small JetBrains">
     <?= copyright('1em', 'currentColor', 'svg-icon'); ?> <?php echo date("Y"); ?> Pixeljagd<sup><a href="" class="custom-link" data-bs-toggle="modal" data-bs-target="#versionModal">v.0.1</a></sup> by <a href="https://rondev.de" class="custom-link" target="_blank">RonDev</a><br>
-    Finde den kleinsten Pixel der Welt!
+    Finde den kleinsten Pixel der Welt! <a class="" href="#" data-bs-toggle="modal" data-bs-target="#thanksModal">Danke</a>
   </footer>
 
   <!-- Toasts -->
