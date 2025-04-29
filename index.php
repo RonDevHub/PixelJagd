@@ -121,7 +121,7 @@
             <?= version('1.3em', 'currentColor'); ?>
           </div>
           <div class="text-container">
-            Versionen
+            Version
           </div>
         </a>
       </li>
@@ -137,14 +137,18 @@
       </li>
     </ul>
     <hr>
-    <div class="ms-3 me-3 d-flex flex-column align-items-center position-relative JetBrainsVersionen">
+    <div class="ms-3 me-3 mb-3 d-flex flex-column align-items-center position-relative">
       <img src="images/rondev.webp" alt="RonDev" class="profil-image position-absolute top-0 start-50 translate-middle-x">
       <div class="w-100 px-4 pt-5 mt-5 text-bg-dark bg-gradient border rounded-3 text-center profil-text aboutme">
         <p class="mb-1 fw-bold fs-4">RonDev</p>
-        <p class="mb-2 rotating-title">&lang;<span id="fun-title">Pixel-Schubser</span>&frasl;&rang;</p>
+        <p class="mb-2 rotating-title">&lang;&frasl;<span id="fun-title">Pixel-Schubser</span>&rang;</p>
         <p class="mb-1 lh-sm fw-light">Zwischen Wahnsinn und Webseiten:<br>Programmieren ist für mich mehr als ein Hobby – es ist meine Art, mit einer überaktiven Birne und meiner PTBS umzugehen 🧠💻<br>Statt Therapie: HTML, PHP, CSS und gelegentliche Nervenzusammenbrüche. Arbeite immer mal wieder an Webprojekten – manche laufen rund, andere laufen Amok. Fortschritte werden gefeiert, Fails gnadenlos dokumentiert. Willkommen in meinem digitalen Selbsthilfeprogramm mit Stil und semikolongetriebener Selbsterkenntnis.</p>
-        <p class="mt-3 fw-light"><a href="https://rondev.de" target="_blank" class="link-light link-offset-2 link-underline-opacity-50 link-underline-opacity-100-hover">&lang;Web&frasl;&rang;</a> <a href="https://mastodon.social/@RonDev" class="link-light link-offset-2 link-underline-opacity-50 link-underline-opacity-100-hover" target="_blank">&lang;Mastodon&frasl;&rang;</a> <a href="#" class="link-light link-offset-2 link-underline-opacity-50 link-underline-opacity-100-hover" data-bs-toggle="modal" data-bs-target="#projektModal">&lang;Weitere Projekte&frasl;&rang;</a><br><a href="#" class="link-light link-offset-2 link-underline-opacity-50 link-underline-opacity-100-hover" data-bs-toggle="modal" data-bs-target="#kaffeeModal">&lang;Kaffee spendieren&frasl;&rang;</a></p>
+        <p class="mt-3 fw-light small text-lowercase text-break"><a href="https://rondev.de" target="_blank" class="link-light link-offset-2 link-underline-opacity-50 link-underline-opacity-100-hover">&lang;&frasl;Web&rang;</a> <a href="https://mastodon.social/@RonDev" class="link-light link-offset-2 link-underline-opacity-50 link-underline-opacity-100-hover" target="_blank">&lang;&frasl;Mastodon&rang;</a> <a href="#" class="link-light link-offset-2 link-underline-opacity-50 link-underline-opacity-100-hover" data-bs-toggle="modal" data-bs-target="#projektModal">&lang;&frasl;Weitere Projekte&rang;</a><br><a href="#" class="link-light link-offset-2 link-underline-opacity-50 link-underline-opacity-100-hover" data-bs-toggle="modal" data-bs-target="#kaffeeModal">&lang;&frasl;Kaffee spendieren&rang;</a></p>
       </div>
+    </div>
+
+    <div class="mb-3 text-center small JetBrains">
+    <?= copyright('1em', 'currentColor', 'svg-icon'); ?> <?php echo date("Y"); ?> Pixeljagd by <a href="https://rondev.de" class="custom-link" target="_blank">RonDev</a><br>
     </div>
 
   </div>

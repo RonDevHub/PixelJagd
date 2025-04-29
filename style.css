@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+}
+
+.JetBrains {
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 400;
+  font-size: 0.7em !important;
+  color: rgba(var(--bs-body-color-rgb), 0.85);
+}
+
+.JetBrainsHeader {
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em !important;
+}
+
+.JetBrainsVersionen {
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 400;
+  font-size: 0.9em !important;
+}
+
+.JetBrainsFooter {
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 400;
+  font-size: 0.74em !important;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main#gameArea {
+  flex: 1;
+  position: relative;
+  background: var(--bs-body-bg);
+  overflow: hidden;
+}
+
+header,
+footer {
+  background-color: var(--bs-body-bg);
+  border-bottom: 1px solid var(--bs-border-color-translucent);
+  border-top: 1px solid var(--bs-border-color-translucent);
+  padding: 0.75rem 1rem;
+}
+
+#gameArea {
+  position: relative;
+  height: calc(100vh - 112px);
+  background: var(--bs-body-bg);
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+#pixel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  z-index: 10;
+}
+
+.toast-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1055;
+}
+
+.custom-link {
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--bs-body-color-rgb), 0.5);
+  color: rgba(var(--bs-body-color-rgb), 0.85);
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+.modal-close-button {
+  background-color: var(--bs-body-bg) !important;
+  /* Modal-Farbe */
+  border: none !important;
+  box-shadow: none !important;
+  display: flex !important;
+  align-items: center !important;
+  /* vertikal */
+  justify-content: center !important;
+  /* horizontal */
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  background-color: var(--bs-body-bg) !important;
+  box-shadow: none !important;
+}
+
+.modal-close-button svg {
+  width: 28px !important;
+  height: 28px !important;
+  color: var(--bs-body-color) !important;
+}
+
+.modal-times-wrapper {
+  position: relative !important;
+  width: 100% !important;
+  height: 20px !important;
+  margin-top: -50px !important;
+  /* Bild ragt oben aus dem Modal */
+  display: flex !important;
+  justify-content: center !important;
+  z-index: 1 !important;
+}
+
+/* Globales SVG-Styling */
+
+.svg-icon,
+.icon {
+  height: 1em;
+  width: 1em;
+  vertical-align: -0.125em;
+}
+
+.bd-mode-toggle .bi {
+  width: 1em;
+  height: 1em;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+/* Offcanvas Basis */
+.offcanvas-custom {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background-color: var(--bs-body-bg);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  z-index: 1050;
+}
+
+.offcanvas-custom.active {
+  right: 0;
+}
+
+/* Standardmäßig: Body NICHT verschieben auf kleinen Bildschirmen */
+.body-shift {
+  transition: margin-right 0.3s ease;
+}
+
+/* Nur auf DESKTOP verschieben */
+@media (min-width: 768px) {
+  .body-shift {
+    margin-right: 400px;
+  }
+}
+
+.icon-container {
+  width: 2.2em; /* Einheitliche Icon-Box */
+  height: 2.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.text-container {
+  margin-left: 0.5em;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.3s ease;
+  padding: 0.5em 0;
+}
+
+.menu-link:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* leichtes Hover-Highlight */
+}
+
+.menu-link:hover .icon-container {
+  transform: scale(1.2); /* Icon leicht vergrößern */
+  color: #0d6efd; /* Bootstrap-Primary oder deine Wunschfarbe */
+}
+
+.profil-image {
+  height: 6em;
+  z-index: 2;
+  border-radius: 50px;
+  background: transparent;
+}
+
+.profil-text {
+  padding-top: 4em !important;
+}
+
+.aboutme {
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 200;
+  font-size: .9em !important;
+}
+
+/* Rotierender Titel in Menü */
+.rotating-title {
+  display: inline-block;
+  height: 1.5em;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+.rotating-title span {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideIn 0.4s ease forwards;
+  opacity: 0;
+  min-width: 10px; /* Optional: damit es nicht zappelt bei kurzen Wörtern */
+}
+
+#fun-title {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideIn 0.4s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
