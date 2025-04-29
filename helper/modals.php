@@ -23,7 +23,7 @@
         </button>
       </div>
       <div class="modal-header">
-        <h5 class="modal-title JetBrainsHeader"><?= version(); ?> Versionen</h5>
+        <h5 class="modal-title JetBrainsHeader"><?= version('1.7em'); ?> Version<sup>0.1</sup></h5>
       </div>
       <div class="modal-body JetBrainsVersionen">
         <p class="fw-semibold mb-0">Version 0.1</p>
@@ -81,7 +81,7 @@
         </button>
       </div>
       <div class="modal-header">
-        <h5 class="modal-title JetBrainsHeader"><?= version(); ?> Impressum</h5>
+        <h5 class="modal-title JetBrainsHeader"><?= inprint('1.7em'); ?> Impressum</h5>
       </div>
       <div class="modal-body JetBrainsVersionen">
         <p class="fw-semibold mb-3">Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):</p>
@@ -99,7 +99,47 @@
         </p>
       </div>
       <div class="modal-footer fw-lighter JetBrainsFooter">
-        <p>Diese Webseite ist seit <span class="fw-bold onlineZeit"></span> online.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Datenschutz -->
+<div class="modal fade user-select-none" data-bs-backdrop="static" data-bs-keyboard="false" id="datenschutzModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content pt-5 pb-1 px-3">
+      <div class="modal-times-wrapper">
+        <button type="button" class="btn modal-close-button rounded-circle position-absolute top-0 start-50 translate-middle" data-bs-dismiss="modal" aria-label="Close" style="width: 48px; height: 48px; transform: translate(-50%, -50%);">
+          <?= getCloseIcon(); ?>
+        </button>
+      </div>
+      <div class="modal-header">
+        <h5 class="modal-title JetBrainsHeader"><?= datenschutz('1.7em'); ?> Datenschutz</h5>
+      </div>
+      <div class="modal-body JetBrainsVersionen">
+        <p class="fw-semibold mb-3">Datenschutzerklärung "PixelJagd"</p>
+        <p class="fw-light lh-1 mb-3">
+          <p class="fw-semibold mb-1">1. Allgemeine Hinweise</p>
+          <p class="ms-2 lh-1">Der Schutz deiner persönlichen Daten ist mir wichtig. Diese Datenschutzerklärung erläutert, welche Daten beim Besuch und der Nutzung dieser Seite verarbeitet werden.</p>
+        </p>
+        <p class="fw-light lh-1 mb-3">
+          <span class="fw-semibold">2. Verantwortliche Stelle</span><br><br>
+          <span class="fw-semibold">RonDev.de</span><br>
+          Ronny Melzer<br>
+          Am Stadion 4<br>
+          07629 Hermsdorf<br>
+          <br>
+          <span class="fw-semibold">Kontakt</span><br>
+          E-Mail: <?= email('1em', 'currentColor'); ?>
+        </p>
+        <p class="fw-light text-danger-emphasis lh-1 small">
+          Die Nutzung der angegebenen Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung, Spam-E-Mails oder sonstigen unerwünschten Nachrichten ist ausdrücklich untersagt. Bei Verstößen gegen dieses Verbot behalte ich mir rechtliche Schritte vor.
+        </p>
+        </p>
+      </div>
+      <div class="modal-footer fw-lighter JetBrainsFooter">
+        
       </div>
     </div>
   </div>

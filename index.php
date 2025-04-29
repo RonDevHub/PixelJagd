@@ -108,7 +108,7 @@
       <li>
         <a class="dropdown-item d-flex align-items-center menu-link" href="#" data-bs-toggle="modal" data-bs-target="#hilfeModal">
           <div class="d-flex icon-container">
-            <?= gamepad('1.3em', 'currentColor'); ?>
+            <?= gamepad('1.5em', 'currentColor'); ?>
           </div>
           <div class="text-container">
             Willkommen
@@ -118,7 +118,7 @@
       <li>
         <a class="dropdown-item d-flex align-items-center menu-link" href="#" data-bs-toggle="modal" data-bs-target="#versionModal">
           <div class="d-flex icon-container">
-            <?= version('1.3em', 'currentColor'); ?>
+            <?= version('1.5em', 'currentColor'); ?>
           </div>
           <div class="text-container">
             Version
@@ -126,9 +126,19 @@
         </a>
       </li>
       <li>
+        <a class="dropdown-item d-flex align-items-center menu-link" href="#" data-bs-toggle="modal" data-bs-target="#datenschutzModal">
+          <div class="d-flex icon-container">
+            <?= datenschutz('1.5em', 'currentColor'); ?>
+          </div>
+          <div class="text-container">
+            Datenschutz
+          </div>
+        </a>
+      </li>
+      <li>
         <a class="dropdown-item d-flex align-items-center menu-link" href="#" data-bs-toggle="modal" data-bs-target="#impressumModal">
           <div class="d-flex icon-container">
-            <?= inprint('1.3em', 'currentColor'); ?>
+            <?= inprint('1.5em', 'currentColor'); ?>
           </div>
           <div class="text-container">
             Impressum
