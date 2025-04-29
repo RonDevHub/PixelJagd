@@ -168,7 +168,7 @@
   </div>
 </div>
 
-<!-- Modal Version -->
+<!-- Modal Danke -->
 <div class="modal fade user-select-none" data-bs-backdrop="static" data-bs-keyboard="false" id="thanksModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -215,7 +215,7 @@
 
       </div>
       <div class="modal-footer fw-lighter JetBrainsFooter">
-        <p>Diese Webseite ist seit <span class="fw-bold onlineZeit"></span> online.</p>
+        
       </div>
     </div>
   </div>
