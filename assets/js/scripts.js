@@ -182,3 +182,36 @@ let found = false;
         });
       });
       
+      const words = [
+        "Pixel-Schubser",
+        "CSS-Magier",
+        "Bug-Bändiger",
+        "Semikolon-Therapeut",
+        "404 Error Fixer",
+        "Digital Nomad – aber mit Couch",
+        "Frontend Ninja"
+      ];
+      
+      let index = 0;
+      const title = document.getElementById("fun-title");
+      
+      function animateWord(word) {
+        title.style.animation = "none"; // Reset Animation
+        title.offsetHeight; // Trigger Reflow
+        title.textContent = word;
+        title.style.opacity = 0;
+        title.style.animation = "slideIn 0.4s ease forwards";
+      
+        // Nach kurzer Zeit ausblenden
+        setTimeout(() => {
+          title.style.animation = "slideOut 0.4s ease forwards";
+        }, 2600); // Wort bleibt 1.6s sichtbar
+      }
+      
+      function loopWords() {
+        animateWord(words[index]);
+        index = (index + 1) % words.length;
+        setTimeout(loopWords, 3000); // alle 2 Sekunden neues Wort
+      }
+      
+      loopWords();
