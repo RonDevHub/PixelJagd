@@ -79,7 +79,7 @@ footer {
 .custom-link {
   text-decoration: underline;
   text-decoration-color: rgba(var(--bs-body-color-rgb), 0.5);
-  color: rgba(var(--bs-body-color-rgb), 0.85);
+  color: rgba(var(--bs-body-color-rgb), 0.9);
 }
 
 @media (max-width: 576px) {
@@ -238,5 +238,59 @@ footer {
     transform: translateY(100%);
     opacity: 0;
   }
+}
+
+.button-group {
+  border: 1px solid #70b60f !important;
+  display: flex !important;
+  width: fit-content !important; /* Passt die Breite an den Inhalt an */
+  max-width: 100% !important; /* Verhindert Überlauf */
+  margin-right: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.svg-container {
+  width: 3em;
+  height: 3em;
+  background-color: #70b60f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Nicht schrumpfen */
+}
+
+.svg-container svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.link-button {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #7ac70c;
+  display: flex;
+  align-items: center; /* Vertikale Zentrierung des Textes */
+  border-left: 1px solid #7ac70c;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.action-button {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-left: 1px solid #8ee000;
+  color: #ffffff;
+  background-color: #8ee000;
+  display: flex;
+  align-items: center; /* Vertikale Zentrierung des Textes */
+  flex-shrink: 0; /* Nicht schrumpfen */
+}
+
+.action-button:hover {
+  background-color: #82cd01;
 }
 
