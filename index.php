@@ -8,20 +8,18 @@
     document.documentElement.setAttribute('data-bs-theme', theme);
   })();
 </script>
-<?php include_once 'helper/svg.php'; ?>
-<?php include_once 'helper/modals.php'; ?>
-
 <head>
   <meta charset="UTF-8">
   <title>Pixeljagd</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="assets\css\style.css" rel="stylesheet">
-  <link href="assets\css\bootstrap.min.css" rel="stylesheet">
-
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="images/favicon-16x16.png" type="image/png">
 </head>
 
-<body>
 
+<body>
+<?php include_once 'helper/svg.php'; ?>
   <header class="d-flex justify-content-between align-items-center px-3 py-2">
     <!-- Titel links -->
     <span class="h5 m-0"><?= sitelogo('2em', 'currentColor'); ?></span>
@@ -168,7 +166,7 @@
     </div>
 
     <div class="mb-3 text-center small JetBrains">
-    <?= copyright('1em', 'currentColor', 'svg-icon'); ?> <?php echo date("Y"); ?> Pixeljagd by <a href="https://rondev.de" rel="noreferrer noopener" class="custom-link" target="_blank">RonDev</a><br>
+      <?= copyright('1em', 'currentColor', 'svg-icon'); ?> <?php echo date("Y"); ?> Pixeljagd by <a href="https://rondev.de" rel="noreferrer noopener" class="custom-link" target="_blank">RonDev</a><br>
     </div>
 
   </div>
@@ -178,7 +176,7 @@
 
   <footer class="text-center small JetBrains">
     <?= copyright('1em', 'currentColor', 'svg-icon'); ?> <?php echo date("Y"); ?> Pixeljagd<sup><a href="" class="custom-link" data-bs-toggle="modal" data-bs-target="#versionModal">v.0.1</a></sup> by <a href="https://rondev.de" rel="noreferrer noopener" class="custom-link" target="_blank">RonDev</a><br>
-    Finde den kleinsten Pixel der Welt! <a class="" href="#" data-bs-toggle="modal" data-bs-target="#thanksModal">Danke</a>
+    Finde den kleinsten Pixel der Welt!
   </footer>
 
   <!-- Toasts -->
@@ -188,7 +186,7 @@
   <script src="assets\js\js-confetti.browser.min.js"></script>
   <script src="assets\js\scripts.js"></script>
   <script src="assets\js\animation.js"></script>
-
+  <?php include_once 'helper/modals.php'; ?>
 </body>
 
 </html>
