@@ -1,5 +1,4 @@
 // Erweiterte Konfetti-Funktion mit "Sammeln"-Effekt und Brand-Icon-Feuerwerk
-
 document.addEventListener("DOMContentLoaded", () => {
   const sounds = [
     "assets/sounds/applause.wav",
@@ -146,3 +145,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+

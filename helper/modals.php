@@ -112,10 +112,10 @@
         <p class="fw-light lh-1 mb-3">
         <p class="fw-semibold mb-1">2. Verantwortliche Stelle</p>
         <p class="ms-2 lh-1">
-          <span class=" fw-semibold">RonDev.de</span><br>
+          <span class="fw-bold">RonDev.de</span><br>
           Ronny Melzer<br>
-          Am Stadion 4<br>
-          07629 Hermsdorf<br>
+          <a href="https://osm.org/go/0MA8tL~A?m=" rel="noreferrer noopener" class="custom-link" target="_blank">Am Stadion 4<br>
+          07629 Hermsdorf</a><br>
           <br>
           <span class="fw-semibold">Kontakt</span><br>
           E-Mail: <?= email('1em', 'currentColor'); ?>
@@ -173,7 +173,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title JetBrainsHeader"><?= version('1.7em'); ?> Danke</h5>
+        <h5 class="modal-title JetBrainsHeader"><?= heart('1.7em', '#ff4c4c', 'heart-beat'); ?> Danke</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body JetBrainsVersionen">
