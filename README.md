@@ -46,7 +46,7 @@ Und weil du wahrscheinlich gerade sowieso etwas aufschieben willst.
 
 ## 🔗 Jetzt ausprobieren
 
-👉 **[Hier geht’s zur PixelJagd](https://pixeljagd.rondevhub.de)**  
+👉 **<a href="https://pixeljagd.rondevhub.de" target="_blank">Hier geht’s zur PixelJagd</a>**  
 Aber Vorsicht: Der Pixel versteckt sich gut.
 
 ---
