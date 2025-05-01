@@ -63,6 +63,7 @@ footer {
 
 #pixel {
   position: absolute;
+  visibility: hidden; /* wird nach Positionierung sichtbar gemacht */
   width: 1px;
   height: 1px;
   background: transparent;

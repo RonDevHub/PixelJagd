@@ -158,7 +158,6 @@
 
   <!-- Toasts -->
   <div class="toast-container" id="toastContainer"></div>
-
   <script src="assets\js\bootstrap.bundle.min.js"></script>
   <script src="assets\js\js-confetti.browser.min.js"></script>
   <script src="assets\js\scripts.js"></script>

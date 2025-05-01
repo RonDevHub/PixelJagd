@@ -23,12 +23,27 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body JetBrainsVersionen">
-        <p class="fw-semibold mb-0">Version 0.1</p>
-        <p class="fw-light mb-0"><?= bug('1.2em', '#ff322e', 'me-1', 'Aktueller Bug'); ?>Bug aktuell</p>
-        <p class="fw-light mb-0"><?= bug('1.2em', '#7fbb00', 'me-1', 'Bug behoben'); ?>Bug behoben</p>
+        <p class="fw-semibold mb-1">🌈 Was erwartet dich?</p>
+        <ul class="custom-list lh-1">
+          <li class="mb-2">
+          <span class="fw-semibold">🕹️ Ein Mini-Spiel ohne Anleitung</span><br>
+          Finde den gut versteckten 1x1 Pixel auf einer ganz normalen Webseite. Keine Hinweise. Nur du, dein Bildschirm – und ein Hauch Wahnsinn.
+          </li>
+          <li class="mb-2">
+          <span class="fw-semibold">📱 Responsives Design</span><br>
+          Spielbar auf Desktop, Tablet und Smartphone.
+          </li>
+          <li class="mb-2">
+          <span class="fw-semibold">🌙 Light & Dark Mode</span><br>
+          Du entscheidest, ob du im Sonnenlicht oder im Schatten jagst.
+          </li>
+          <li class="mb-2">
+          <span class="fw-semibold">🥳 Keine Registrierung, keine Cookies, keine Werbung</span> - Nur pure Pixel-Action.
+          </li>
+        </ul>
       </div>
       <div class="modal-footer fw-lighter JetBrainsFooter">
-        <p>Diese Webseite ist seit <span class="fw-bold onlineZeit"></span> online.</p>
+        <p><?= bug('1.2em', '#ff322e', 'me-1', 'Aktueller Bug'); ?>Bug aktuell <?= bug('1.2em', '#7fbb00', 'me-1', 'Bug behoben'); ?>Bug behoben</p>
       </div>
     </div>
   </div>
@@ -83,7 +98,7 @@
           <span class="fw-semibold">Kontakt</span><br>
           E-Mail: <?= email('1em', 'currentColor'); ?>
         </p>
-        <p class="fw-light text-danger-emphasis lh-1 small">
+        <p class="fw-light text-danger fw-semibold lh-1 small">
           Die Nutzung der angegebenen Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung, Spam-E-Mails oder sonstigen unerwünschten Nachrichten ist ausdrücklich untersagt. Bei Verstößen gegen dieses Verbot behalte ich mir rechtliche Schritte vor.
         </p>
       </div>

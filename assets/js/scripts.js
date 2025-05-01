@@ -1,25 +1,37 @@
 let found = false;
 
-const pixel = document.getElementById("pixel");
-const gameArea = document.getElementById("gameArea");
-const areaRect = gameArea.getBoundingClientRect();
-const posX = Math.floor(Math.random() * (areaRect.width - 1));
-const posY = Math.floor(Math.random() * (areaRect.height - 1));
-pixel.style.left = `${posX}px`;
-pixel.style.top = `${posY}px`;
+document.addEventListener("DOMContentLoaded", () => {
+  const pixel = document.getElementById("pixel");
+  const gameArea = document.getElementById("gameArea");
 
-pixel.addEventListener("click", (e) => {
-  e.stopPropagation();
-  found = true;
-  const modal = new bootstrap.Modal(document.getElementById("foundModal"));
-  modal.show();
+  // Warten, bis Layout wirklich fertig ist
+  requestAnimationFrame(() => {
+    const areaRect = gameArea.getBoundingClientRect();
+    const posX = Math.floor(Math.random() * (areaRect.width - pixel.offsetWidth));
+    const posY = Math.floor(Math.random() * (areaRect.height - pixel.offsetHeight));
+
+    pixel.style.left = `${posX}px`;
+    pixel.style.top = `${posY}px`;
+    pixel.style.visibility = "visible"; // falls im CSS zunächst „hidden“ gesetzt
+
+    // Klick auf Pixel gefunden
+    pixel.addEventListener("click", (e) => {
+      e.stopPropagation();
+      found = true;
+      const modal = new bootstrap.Modal(document.getElementById("foundModal"));
+      modal.show();
+    });
+
+    // Klick ins leere Spielfeld
+    gameArea.addEventListener("click", (e) => {
+      if (!found && e.target !== pixel) {
+        showToast("Da bin ich nicht – such weiter!");
+      }
+    });
+  });
 });
 
-gameArea.addEventListener("click", (e) => {
-  if (!found && e.target !== pixel) {
-    showToast("Da bin ich nicht – such weiter!");
-  }
-});
+
 
 // Toast Funktion
 function showToast(message) {
@@ -73,18 +85,6 @@ onlineZeitElemente.forEach((el) => {
   el.textContent = berechneOnlineZeit(startDatum);
 });
 
-// Modal Verstecken
-document.addEventListener("DOMContentLoaded", () => {
-  const modals = document.querySelectorAll(".modal");
-
-  modals.forEach((modal) => {
-    modal.addEventListener("hide.bs.modal", () => {
-      if (document.activeElement && modal.contains(document.activeElement)) {
-        document.activeElement.blur();
-      }
-    });
-  });
-});
 
 // Tooltip erscheint nun auch bei anderen Objekten außer bei a & button Atributen
 document.addEventListener("DOMContentLoaded", function () {
