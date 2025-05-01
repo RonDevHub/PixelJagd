@@ -19,26 +19,26 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title JetBrainsHeader"><?= version('1.7em'); ?> Version<sup>0.1</sup></h5>
+        <h5 class="modal-title JetBrainsHeader"><?= version('1.7em'); ?> Version<sup><?= $version; ?></sup></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body JetBrainsVersionen">
         <p class="fw-semibold mb-1">🌈 Was erwartet dich?</p>
         <ul class="custom-list lh-1">
           <li class="mb-2">
-          <span class="fw-semibold">🕹️ Ein Mini-Spiel ohne Anleitung</span><br>
-          Finde den gut versteckten 1x1 Pixel auf einer ganz normalen Webseite. Keine Hinweise. Nur du, dein Bildschirm – und ein Hauch Wahnsinn.
+            <span class="fw-semibold">🕹️ Ein Mini-Spiel ohne Anleitung</span><br>
+            Finde den gut versteckten 1x1 Pixel auf einer ganz normalen Webseite. Keine Hinweise. Nur du, dein Bildschirm – und ein Hauch Wahnsinn.
           </li>
           <li class="mb-2">
-          <span class="fw-semibold">📱 Responsives Design</span><br>
-          Spielbar auf Desktop, Tablet und Smartphone.
+            <span class="fw-semibold">📱 Responsives Design</span><br>
+            Spielbar auf Desktop, Tablet und Smartphone.
           </li>
           <li class="mb-2">
-          <span class="fw-semibold">🌙 Light & Dark Mode</span><br>
-          Du entscheidest, ob du im Sonnenlicht oder im Schatten jagst.
+            <span class="fw-semibold">🌙 Light & Dark Mode</span><br>
+            Du entscheidest, ob du im Sonnenlicht oder im Schatten jagst.
           </li>
           <li class="mb-2">
-          <span class="fw-semibold">🥳 Keine Registrierung, keine Cookies, keine Werbung</span> - Nur pure Pixel-Action.
+            <span class="fw-semibold">🥳 Keine Registrierung, keine Cookies, keine Werbung</span> - Nur pure Pixel-Action.
           </li>
         </ul>
       </div>
@@ -130,13 +130,13 @@
           <span class="fw-bold">RonDev.de</span><br>
           Ronny Melzer<br>
           <a href="https://osm.org/go/0MA8tL~A?m=" rel="noreferrer noopener" class="custom-link" target="_blank">Am Stadion 4<br>
-          07629 Hermsdorf</a><br>
+            07629 Hermsdorf</a><br>
           <br>
           <span class="fw-semibold">Kontakt</span><br>
           E-Mail: <?= email('1em', 'currentColor'); ?>
         </p>
         </p>
-        <p class="fw-light text-danger-emphasis lh-1 small">
+        <p class="fw-light text-danger fw-semibold lh-1 small">
           Die Nutzung der angegebenen Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung, Spam-E-Mails oder sonstigen unerwünschten Nachrichten ist ausdrücklich untersagt. Bei Verstößen gegen dieses Verbot behalte ich mir rechtliche Schritte vor.
         </p>
         <hr>
@@ -236,6 +236,104 @@
       </div>
       <div class="modal-footer fw-lighter JetBrainsFooter">
 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Kaffee Modal -->
+<div class="modal fade user-select-none" data-bs-backdrop="static" data-bs-keyboard="false" id="kaffeeModal" z-index="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered  modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">☕ Unterstütze mich</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <b>Kostenlose Tools benötigen Unterstützung</b>
+            <p>Die Bereitstellung kostenloser Online-Tools erfordert nicht nur Zeit und Engagement, sondern verursacht auch laufende Kosten – zum Beispiel für Hosting, Domain und Weiterentwicklung.
+              Wenn dir dieser <strong>Love-Generator</strong> gefällt und du seine weitere Entwicklung unterstützen möchtest, kannst du dies gerne über PayPal tun.
+              Einfach auf den Button klicken und einen festen oder individuellen Betrag wählen – jeder Beitrag hilft weiter.<br>
+              💡 Hinweis: Du kannst selbstverständlich auch einen frei wählbaren Betrag eingeben – jede Unterstützung ist wertvoll und wird sehr geschätzt!</p>
+          </div>
+          <!-- Erste Spende -->
+          <div class="col-md-6">
+            <a href="https://www.paypal.com/paypalme/Depressionist1/0,99" rel="noreferrer noopener" target="_blank">
+              <div class="donation-container">
+                <div>
+                  <h4>Kaffee-Boost</h4>
+                  <p>Treibstoff zum Schreiben ☕</p>
+                </div>
+                <span class="badge bg-primary badge-vertical">0,99€</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6">
+            <a href="https://www.paypal.com/paypalme/Depressionist1/1,99" rel="noreferrer noopener" target="_blank">
+              <div class="donation-container">
+                <div>
+                  <h4>Snack-Angriff</h4>
+                  <p>Für nächtliche Zuckergelüste 🍪</p>
+                </div>
+                <span class="badge bg-primary badge-vertical">1,99€</span>
+              </div>
+            </a>
+          </div>
+          <!-- Zweite Spende -->
+          <div class="col-md-6">
+            <a href="https://www.paypal.com/paypalme/Depressionist1/4,99" rel="noreferrer noopener" target="_blank">
+              <div class="donation-container">
+                <div>
+                  <h4>Pizza-Power</h4>
+                  <p>Ein Stück Kreativität 🍕</p>
+                </div>
+                <span class="badge bg-success badge-vertical">4,99€</span>
+              </div>
+            </a>
+          </div>
+          <!-- Dritte Spende -->
+          <div class="col-md-6">
+            <a href="https://www.paypal.com/paypalme/Depressionist1/9,99" rel="noreferrer noopener" target="_blank">
+              <div class="donation-container">
+                <div>
+                  <h4>Hosting-Helden</h4>
+                  <p>Für bessere Performance 🖥️</p>
+                </div>
+                <span class="badge bg-danger badge-vertical">9,99€</span>
+              </div>
+            </a>
+          </div>
+          <!-- Vierte Spende -->
+          <div class="col-md-6">
+            <a href="https://www.paypal.com/paypalme/Depressionist1/14,99" rel="noreferrer noopener" target="_blank">
+              <div class="donation-container">
+                <div>
+                  <h4>Langfristiger Support</h4>
+                  <p>Helfen, die Zukunft zu sichern 🚀</p>
+                </div>
+                <span class="badge bg-warning text-dark badge-vertical">14,99€</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="https://www.paypal.com/paypalme/Depressionist1/" rel="noreferrer noopener" target="_blank">
+              <div class="donation-container">
+                <div>
+                  <h4>Individuellen Support</h4>
+                  <p>Gib was du magst und kannst ❤️</p>
+                </div>
+                <span class="badge bg-warning text-dark badge-vertical">❤️</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Schließen</button>
       </div>
     </div>
   </div>

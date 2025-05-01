@@ -4,16 +4,17 @@
   <script>
     (()=>{ const theme=localStorage.getItem('theme') || 'auto'; if (theme==='dark'){ document.documentElement.setAttribute('data-bs-theme', 'dark');} else if (theme==='light'){ document.documentElement.setAttribute('data-bs-theme', 'light');} else{ document.documentElement.removeAttribute('data-bs-theme');} const iconMap={ light: '#sun-fill', dark: '#moon-stars-fill', auto: '#circle-half'}; const setIcon=()=>{ const use=document.querySelector('.theme-icon-active use'); if (use){ use.setAttribute('href', iconMap[theme]);}}; if (document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', setIcon);} else{ setIcon();} const markThemeReady=()=>document.documentElement.classList.add('theme-ready'); if (document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', ()=>{ setIcon(); markThemeReady();});} else{ setIcon(); markThemeReady();}})();
   </script>
+  <?php include_once 'helper/config.php'; ?>
+  <?php include_once 'helper/svg.php'; ?>
   <meta charset="UTF-8">
   <title>Pixeljagd</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.<?= $version; ?>.css" rel="stylesheet">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel="icon" href="images/favicon-16x16.png" type="image/png">
 </head>
 
 <body>
-  <?php include_once 'helper/svg.php'; ?>
   <header class="d-flex justify-content-between align-items-center px-3 py-2">
     <span class="h5 m-0 link-logo"><a href=""><?= sitelogo('2em', 'currentColor'); ?></a></span>
     <div class="d-flex align-items-center gap-2">
@@ -152,16 +153,17 @@
   </main>
 
   <footer class="text-center small JetBrains">
-    <?= copyright('1em', 'currentColor', 'svg-icon'); ?> <?php echo date("Y"); ?> Pixeljagd<sup><a href="" class="custom-link" data-bs-toggle="modal" data-bs-target="#versionModal">v.0.1</a></sup> by <a href="https://rondev.de" rel="noreferrer noopener" class="custom-link" target="_blank">RonDev</a><br>
+    <?= copyright('1em', 'currentColor', 'svg-icon'); ?> <?= date("Y"); ?> Pixeljagd<sup><a href="" class="custom-link" data-bs-toggle="modal" data-bs-target="#versionModal">v<?= $version; ?></a></sup> by <a href="https://rondev.de" rel="noreferrer noopener" class="custom-link" target="_blank">RonDev</a><br>
     Finde den kleinsten Pixel der Welt!
   </footer>
 
   <!-- Toasts -->
   <div class="toast-container" id="toastContainer"></div>
-  <script src="assets\js\bootstrap.bundle.min.js"></script>
-  <script src="assets\js\js-confetti.browser.min.js"></script>
-  <script src="assets\js\scripts.js"></script>
-  <script src="assets\js\animation.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/js-confetti.browser.min.js"></script>
+  <script src="assets/js/scripts.<?= $version; ?>.js"></script>
+  <script src="assets/js/animation.<?= $version; ?>.js"></script>
   <?php include_once 'helper/modals.php'; ?>
+
 </body>
 </html>
