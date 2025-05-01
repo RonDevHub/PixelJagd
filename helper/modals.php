@@ -243,18 +243,18 @@
 
 <!-- Kaffee Modal -->
 <div class="modal fade user-select-none" data-bs-backdrop="static" data-bs-keyboard="false" id="kaffeeModal" z-index="-1" role="dialog">
-  <div class="modal-dialog modal-lg modal-dialog-centered  modal-dialog-scrollable">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">☕ Unterstütze mich</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body link-logo">
         <div class="row">
           <div class="col-md-12">
             <b>Kostenlose Tools benötigen Unterstützung</b>
-            <p>Die Bereitstellung kostenloser Online-Tools erfordert nicht nur Zeit und Engagement, sondern verursacht auch laufende Kosten – zum Beispiel für Hosting, Domain und Weiterentwicklung.
-              Wenn dir dieser <strong>Love-Generator</strong> gefällt und du seine weitere Entwicklung unterstützen möchtest, kannst du dies gerne über PayPal tun.
+            <p>Die Bereitstellung <span class="fw-semibold">kostenloser</span> und <span class="fw-semibold">werbebreier</span> Online-Tools erfordert nicht nur Zeit und Engagement, sondern verursacht auch laufende Kosten – zum Beispiel für Hosting, Domain und Weiterentwicklung.
+              Wenn dir diese <span class="fw-bold">PixelJagd</span> gefällt und du seine weitere Entwicklung unterstützen möchtest, kannst du dies gerne über PayPal tun.
               Einfach auf den Button klicken und einen festen oder individuellen Betrag wählen – jeder Beitrag hilft weiter.<br>
               💡 Hinweis: Du kannst selbstverständlich auch einen frei wählbaren Betrag eingeben – jede Unterstützung ist wertvoll und wird sehr geschätzt!</p>
           </div>
@@ -331,6 +331,24 @@
           </div>
         </div>
 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Schließen</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal mit iFrame -->
+<div class="modal fade user-select-none" id="projektModal" tabindex="-1" aria-labelledby="projektModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projektModalLabel">Meine Projekte</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+      </div>
+      <div class="modal-body p-0" style="overflow: hidden; padding: 0 !important;">
+        <iframe src="https://projekte.rondev.de/projekte/_modal-projekte.php" style="border:0;width:100%;height:65vh;" loading="lazy"></iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Schließen</button>

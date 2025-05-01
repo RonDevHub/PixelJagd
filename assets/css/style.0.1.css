@@ -370,6 +370,7 @@ html.theme-ready .dropdown.bd-mode-toggle {
 
 .link-logo a{
   color: rgba(var(--bs-body-color-rgb));
+  text-decoration: none !important;
 }
 
 /* Pulsierenedes Herz */
@@ -414,10 +415,6 @@ html.theme-ready .dropdown.bd-mode-toggle {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.donation-container a{
-  color: rgba(var(--bs-body-color-rgb));
-  text-decoration: none;
 }
 
 .badge-vertical {
