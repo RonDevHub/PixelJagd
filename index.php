@@ -1,18 +1,32 @@
 <!DOCTYPE html>
+<?php include_once 'helper/config.php'; ?>
 <html lang="de" data-bs-theme="auto">
+
 <head>
   <script>
     (()=>{ const theme=localStorage.getItem('theme') || 'auto'; if (theme==='dark'){ document.documentElement.setAttribute('data-bs-theme', 'dark');} else if (theme==='light'){ document.documentElement.setAttribute('data-bs-theme', 'light');} else{ document.documentElement.removeAttribute('data-bs-theme');} const iconMap={ light: '#sun-fill', dark: '#moon-stars-fill', auto: '#circle-half'}; const setIcon=()=>{ const use=document.querySelector('.theme-icon-active use'); if (use){ use.setAttribute('href', iconMap[theme]);}}; if (document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', setIcon);} else{ setIcon();} const markThemeReady=()=>document.documentElement.classList.add('theme-ready'); if (document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', ()=>{ setIcon(); markThemeReady();});} else{ setIcon(); markThemeReady();}})();
   </script>
-  <?php include_once 'helper/config.php'; ?>
-  <?php include_once 'helper/svg.php'; ?>
   <meta charset="UTF-8">
-  <title>Pixeljagd</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="assets/css/style.<?= $version; ?>.css" rel="stylesheet">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <title>Pixeljagd – Deine verspielte Reise durch versteckte Pixel-Welten</title>
+  <meta name="description" content="Entdecke die geheime Welt von Pixeljagd – eine interaktive Web-Erfahrung mit Eastereggs, Retro-Flair und Überraschungen. Für Neugierige, Entdecker und Pixeljäger!">
+  <meta name="keywords" content="Pixeljagd, Eastereggs, Geheimnisse, Retro, Spielerei, Webspiel, HTML Spiel, interaktiv, Überraschung, Technik-Demo">
+  <meta name="author" content="RonDev">
+  <meta property="og:title" content="Pixeljagd – Interaktive Retro-Webwelt voller Geheimnisse">
+  <meta property="og:description" content="Tauche ein in eine Welt voller versteckter Eastereggs und Spielereien. Jetzt Pixeljagd starten!">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:url" content="https://pixeljagd.rondevhub.de/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pixeljagd – Deine Websuche nach versteckten Pixeln">
+  <meta name="twitter:description" content="Eine verspielte, liebevoll gestaltete Web-Erfahrung mit Eastereggs und Geheimnissen.">
+  <meta name="twitter:image" content="images/og-image.png">
   <link rel="icon" href="images/favicon-16x16.png" type="image/png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.<?= $version; ?>.css" rel="stylesheet">
 </head>
+<?php include_once 'helper/svg.php'; ?>
 
 <body>
   <header class="d-flex justify-content-between align-items-center px-3 py-2">
@@ -80,14 +94,14 @@
     <div class="mt-3 mb-2 text-center align-items-center">
       <?= sitelogo('2.5em', 'currentColor'); ?>
     </div>
-    <ul class="list-unstyled m-0 p-4">
+    <ul class="list-unstyled m-0 p-3">
       <li>
         <a class="dropdown-item d-flex align-items-center menu-link" href="#" data-bs-toggle="modal" data-bs-target="#hilfeModal">
           <div class="d-flex icon-container">
             <?= gamepad('1.5em', 'currentColor'); ?>
           </div>
           <div class="text-container">
-            Willkommen
+            Anleitung
           </div>
         </a>
       </li>
@@ -143,8 +157,8 @@
       </div>
     </div>
 
-    <div class="mb-3 text-center small JetBrains">
-      <?= copyright('1em', 'currentColor', 'svg-icon'); ?> <?php echo date("Y"); ?> Pixeljagd by <a href="https://rondev.de" rel="noreferrer noopener" class="custom-link" target="_blank">RonDev</a><br>
+    <div class="mb-3 text-center JetBrains">
+      <?= copyright('1em', 'currentColor', 'svg-icon'); ?> <?php echo date("Y"); ?> PixelJagd by <a href="https://rondev.de" rel="noreferrer noopener" class="custom-link" target="_blank">RonDev</a><br>
     </div>
 
   </div>
@@ -152,8 +166,8 @@
     <div id="pixel"></div>
   </main>
 
-  <footer class="text-center small JetBrains">
-    <?= copyright('1em', 'currentColor', 'svg-icon'); ?> <?= date("Y"); ?> Pixeljagd<sup><a href="" class="custom-link" data-bs-toggle="modal" data-bs-target="#versionModal">v<?= $version; ?></a></sup> by <a href="https://rondev.de" rel="noreferrer noopener" class="custom-link" target="_blank">RonDev</a><br>
+  <footer class="text-center JetBrains">
+    <?= copyright('1em', 'currentColor', 'svg-icon'); ?> <?= date("Y"); ?> PixelJagd<sup><a href="" class="custom-link" data-bs-toggle="modal" data-bs-target="#versionModal">v<?= $version; ?></a></sup> by <a href="https://rondev.de" rel="noreferrer noopener" class="custom-link" target="_blank">RonDev</a><br>
     Finde den kleinsten Pixel der Welt!
   </footer>
 
@@ -166,4 +180,5 @@
   <?php include_once 'helper/modals.php'; ?>
 
 </body>
+
 </html>

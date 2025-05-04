@@ -4,27 +4,33 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+  font-style: normal;
+}
+
 .JetBrains {
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   font-weight: 400;
   font-size: 0.7em !important;
   color: rgba(var(--bs-body-color-rgb), 0.85);
 }
 
 .JetBrainsHeader {
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   font-weight: 400;
   font-size: 1.2em !important;
 }
 
 .JetBrainsVersionen {
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   font-weight: 400;
   font-size: 0.9em !important;
 }
 
 .JetBrainsFooter {
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   font-weight: 400;
   font-size: 0.74em !important;
 }
@@ -36,6 +42,8 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 main#gameArea {

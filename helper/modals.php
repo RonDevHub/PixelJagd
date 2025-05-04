@@ -24,7 +24,7 @@
       </div>
       <div class="modal-body JetBrainsVersionen">
         <p class="fw-semibold mb-1">🌈 Was erwartet dich?</p>
-        <ul class="custom-list lh-1">
+        <ul class="custom-list">
           <li class="mb-2">
             <span class="fw-semibold">🕹️ Ein Mini-Spiel ohne Anleitung</span><br>
             Finde den gut versteckten 1x1 Pixel auf einer ganz normalen Webseite. Keine Hinweise. Nur du, dein Bildschirm – und ein Hauch Wahnsinn.
@@ -55,24 +55,24 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title JetBrainsVersionen">Willkommen bei Pixeljagd!</h5>
+        <h5 class="modal-title">Willkommen bei Pixeljagd!</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body lh-1 JetBrainsVersionen">
-        <p class="fw-light mb-2">
+      <div class="modal-body">
+        <p class="mb-2">
           Deine Aufgabe ist einfach – und doch herausfordernd: Finde den winzig kleinen, fast unsichtbaren Pixel auf dem Spielfeld! 🕵️‍♂️
         </p>
-        <p class="fw-light mb-2">
+        <p class="mb-2">
           Klicke einfach auf die Fläche. Wenn du daneben klickst, bekommst du einen kleinen Hinweis. Hast du den Pixel gefunden, erwartet dich eine kleine Belohnung!
         </p>
-        <p class="fw-light mb-2">
+        <p class="mb-2">
           Über das Menü oben kannst du auch zwischen hellen und dunklen Designs wechseln – je nachdem, was für deine Augen am angenehmsten ist. Der Pixel bleibt aber dennoch fast usichtbar!
         </p>
-        <p class="fw-light mb-0">
+        <p class="mb-0">
           Viel Spaß und viel Erfolg bei der Suche! 🎯
         </p>
       </div>
-      <div class="modal-footer fw-lighter JetBrainsFooter">
+      <div class="modal-footer fw-lighter">
         <p>Diese Webseite ist seit <span class="fw-bold onlineZeit"></span> online.</p>
       </div>
     </div>
@@ -84,12 +84,12 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title JetBrainsHeader"><?= inprint('1.7em'); ?> Impressum</h5>
+        <h5 class="modal-title"><?= inprint('1.7em'); ?> Impressum</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body JetBrainsVersionen">
+      <div class="modal-body">
         <p class="fw-semibold mb-3">Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):</p>
-        <p class="fw-light lh-1 mb-2">
+        <p class="lh-1 mb-2">
           <span class="fw-semibold">Seitenbetreiber:</span><br>
           Ronny Melzer<br>
           <a href="https://osm.org/go/0MA8tL~A?m=" rel="noreferrer noopener" class="custom-link" target="_blank">Am Stadion 4<br>
@@ -98,11 +98,11 @@
           <span class="fw-semibold">Kontakt</span><br>
           E-Mail: <?= email('1em', 'currentColor'); ?>
         </p>
-        <p class="fw-light text-danger fw-semibold lh-1 small">
+        <p class="text-danger fw-semibold lh-1">
           Die Nutzung der angegebenen Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung, Spam-E-Mails oder sonstigen unerwünschten Nachrichten ist ausdrücklich untersagt. Bei Verstößen gegen dieses Verbot behalte ich mir rechtliche Schritte vor.
         </p>
       </div>
-      <div class="modal-footer fw-lighter JetBrainsFooter">
+      <div class="modal-footer fw-lighter">
 
       </div>
     </div>
@@ -114,10 +114,10 @@
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title JetBrainsHeader"><?= datenschutz('1.7em'); ?> Datenschutz</h5>
+        <h5 class="modal-title"><?= datenschutz('1.7em'); ?> Datenschutz</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body JetBrainsVersionen">
+      <div class="modal-body">
         <p class="fw-semibold mb-3">Datenschutzerklärung "PixelJagd"</p>
         <p class="fw-light lh-1 mb-3">
         <p class="fw-semibold mb-1">1. Allgemeine Hinweise</p>
@@ -136,7 +136,7 @@
           E-Mail: <?= email('1em', 'currentColor'); ?>
         </p>
         </p>
-        <p class="fw-light text-danger fw-semibold lh-1 small">
+        <p class="fw-light text-danger fw-semibold lh-1">
           Die Nutzung der angegebenen Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung, Spam-E-Mails oder sonstigen unerwünschten Nachrichten ist ausdrücklich untersagt. Bei Verstößen gegen dieses Verbot behalte ich mir rechtliche Schritte vor.
         </p>
         <hr>
@@ -176,7 +176,7 @@
         </p>
 
       </div>
-      <div class="modal-footer fw-lighter JetBrainsFooter">
+      <div class="modal-footer fw-light">
         Stand: 29.04.2025
       </div>
     </div>
@@ -185,13 +185,13 @@
 
 <!-- Modal Danke -->
 <div class="modal fade user-select-none" data-bs-backdrop="static" data-bs-keyboard="false" id="thanksModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title JetBrainsHeader"><?= heart('1.7em', '#ff4c4c', 'heart-beat'); ?> Danke</h5>
+        <h5 class="modal-title"><?= heart('1.7em', '#ff4c4c', 'heart-beat me-2'); ?> Danke</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body JetBrainsVersionen">
+      <div class="modal-body">
         <p>Danke geht raus an:</p>
 
         <div class="d-flex border rounded overflow-hidden button-group">
