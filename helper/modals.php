@@ -16,7 +16,7 @@
 
 <!-- Modal Version -->
 <div class="modal fade user-select-none" data-bs-backdrop="static" data-bs-keyboard="false" id="versionModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title JetBrainsHeader"><?= version('1.7em'); ?> Version<sup><?= $version; ?></sup></h5>
@@ -52,7 +52,7 @@
 
 <!-- Modal Anleitung -->
 <div class="modal fade user-select-none" data-bs-backdrop="static" data-bs-keyboard="false" id="hilfeModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Willkommen bei Pixeljagd!</h5>
@@ -81,7 +81,7 @@
 
 <!-- Modal Impressum -->
 <div class="modal fade user-select-none" data-bs-backdrop="static" data-bs-keyboard="false" id="impressumModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title"><?= inprint('1.7em'); ?> Impressum</h5>
@@ -111,7 +111,7 @@
 
 <!-- Modal Datenschutz -->
 <div class="modal fade user-select-none" data-bs-backdrop="static" data-bs-keyboard="false" id="datenschutzModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title"><?= datenschutz('1.7em'); ?> Datenschutz</h5>
@@ -205,6 +205,9 @@
             <?= confetti(); ?>
           </div>
         </div>
+        <div>
+          Für das beste Framework für Webdesign
+        </div>
 
         <div class="d-flex border rounded overflow-hidden button-group mt-1">
           <div class="d-flex justify-content-center align-items-center svg-container">
@@ -219,6 +222,9 @@
             <?= confetti(); ?>
           </div>
         </div>
+        <div>
+          Für das beste Dokumantation meiner Fehler und Fortschritte
+        </div>
         <div class="d-flex border rounded overflow-hidden button-group mt-1">
           <div class="d-flex justify-content-center align-items-center svg-container">
             <svg height="2em" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" class="h-6 w-6" viewBox="-0.17090198558635983 0.482230148717937 41.14235318283891 40.0339509076386"><text x="-9999" y="-9999">ChatGPT</text>
@@ -232,6 +238,24 @@
             <?= confetti(); ?>
           </div>
         </div>
+        <div>
+          Für die unschätzbare Unterstützung in den dunkelsten Stunden des Debuggings – wenn ich wieder einmal verzweifelt nach dem fehlenden Semikolon gesucht habe, das mein gesamtes Universum zum Einsturz brachte.
+        </div>
+       <!--<div class="d-flex border rounded overflow-hidden button-group mt-1">
+          <div class="d-flex justify-content-center align-items-center svg-container">
+          <svg height="1.6em" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.13 69.89"><defs><style>.cls-1{fill:#f7dd30;}</style></defs><title>batman</title><path class="cls-1" d="M121.06,35c0,18.71-26.86,33.88-60,33.88S1.06,53.66,1.06,35s26.87-33.89,60-33.89,60,15.17,60,33.89Z"/><path d="M51.72,24.46c-14.49,5.37-21.86-8-14.49-15.74-11.75,3-30.86,11.49-30.86,25.63,0,12.83,12.49,20.09,21.49,23.22-8.68-10.74,3.25-19.16,13.7-7.41C49.69,35.73,59.28,56.44,61,59.58h0c1.71-3.14,11.31-23.85,19.44-9.42,10.45-11.75,22.38-3.33,13.7,7.41,9-3.13,21.49-10.39,21.49-23.22,0-14.14-19.11-22.63-30.86-25.63,7.37,7.74,0,21.11-14.49,15.74-1.67-2-2.75-6.11-2.75-18.24-1.94,1.26-3.33,5.71-3.45,6a12,12,0,0,0-6.15,0c-.12-.32-1.51-4.77-3.45-6,0,12.13-1.08,16.25-2.75,18.24ZM122.13,35c0,9.76-6.93,18.56-18.12,24.88-11,6.22-26.2,10.06-42.95,10.06S29.13,66.05,18.12,59.83C6.92,53.51,0,44.71,0,35S6.92,16.39,18.12,10.07C29.13,3.85,44.32,0,61.06,0S93,3.85,104,10.07C115.2,16.39,122.13,25.18,122.13,35ZM103,58c10.52-5.94,17-14.09,17-23s-6.51-17.1-17-23c-10.7-6-25.52-9.78-41.91-9.78s-31.2,3.74-41.9,9.78C8.64,17.85,2.13,26,2.13,35S8.64,52,19.16,58c10.7,6.05,25.52,9.79,41.9,9.79S92.27,64,103,58Z"/></svg>
+
+          </div>
+          <a href="https://www.dc.com/characters/batman" rel="noreferrer noopener" target="_blank" class="d-flex justify-content-center align-items-center link-button">
+            Batman
+          </a>
+          <div id="konfetti-batman" class="d-flex justify-content-center align-items-center action-button">
+          
+          </div>
+        </div>
+        <div>
+          Für die unschätzbare Unterstützung in den dunkelsten Stunden des Debuggings – wenn ich wieder einmal verzweifelt nach dem fehlenden Semikolon gesucht habe, das mein gesamtes Universum zum Einsturz brachte.
+        </div>-->
 
       </div>
       <div class="modal-footer fw-lighter JetBrainsFooter">
@@ -356,3 +380,175 @@
     </div>
   </div>
 </div>
+
+<!-- Mastodon Share Modal -->
+<div class="modal fade" id="mastodonShareModal" tabindex="-1" aria-labelledby="mastodonShareModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="mastodonShareModalLabel">Beitrag auf Mastodon teilen</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+      </div>
+      <div class="modal-body">
+        <p>Gib deine Mastodon-Instanz ein (z. B. <code>mastodon.social</code>):</p>
+        <div class="form-group">
+          <input type="text" id="mastodonInstance" class="form-control" placeholder="Deine Instanz (z. B. mastodon.social)">
+        </div>
+        <p><small>Du kannst jede beliebige Mastodon-Instanz verwenden.</small></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-bs-dismiss="modal">Abbrechen</button>
+        <button type="button" class="btn btn-primary" id="generateMastodonShareLink">Teilen</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  // Mastodon Share Button
+  document.addEventListener('DOMContentLoaded', function() {
+    const shareButton = document.getElementById('generateMastodonShareLink');
+    const instanceInput = document.getElementById('mastodonInstance');
+    const baseUrl = `${window.location.protocol}//${window.location.host}`;
+    const postText = encodeURIComponent("Entdecke die geheime Welt von Pixeljagd – eine interaktive Web-Erfahrung mit Eastereggs, Retro-Flair und Überraschungen. Für Neugierige, Entdecker und Pixeljäger! #RonDev #PixelJagd"); // Dein Text
+
+    shareButton.addEventListener('click', function() {
+      const instance = instanceInput.value.trim();
+      if (instance) {
+        const shareUrl = `https://${instance}/share?text=${postText}&url=${baseUrl}`;
+        window.open(shareUrl, '_blank'); // Öffnet den Share-Link in einem neuen Tab
+        $('#mastodonShareModal').modal('hide'); // Schließt das Modal
+      } else {
+        alert('Bitte gib eine gültige Mastodon-Instanz ein.');
+      }
+    });
+  });
+</script>
+
+<!-- QR Modal -->
+<style>
+  #qrcode canvas {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    /* Optional */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional */
+  }
+</style>
+<div class="modal fade" id="QrShareModal" tabindex="-1" aria-labelledby="QrShareModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="QrShareModalLabel">Teilen via QR-Code</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div id="qrcode" style="text-align: center;"></div>
+        <!-- Download Buttons -->
+        <div class="mt-3">
+          <button id="downloadPng" class="btn btn-primary">Download PNG</button>
+          <button id="downloadSvg" class="btn btn-primary">Download SVG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const qrCode = new QRCodeStyling({
+      width: 275,
+      height: 275,
+      data: "<?= $baseUrl; ?>",
+      dotsOptions: {
+        type: "extra-rounded",
+        gradient: {
+          type: "linear",
+          rotation: 0,
+          colorStops: [{
+              offset: 0,
+              color: "rgba(1,47,95,1)"
+            },
+            {
+              offset: 1,
+              color: "rgb(25, 131, 225)"
+            }
+
+          ]
+        }
+      },
+      backgroundOptions: {
+        color: "#ffffff"
+      },
+      imageOptions: {
+        crossOrigin: "anonymous", // Ermöglicht das Laden von Bildern ohne CORS-Probleme
+        margin: 10
+      },
+      qrOptions: {
+        errorCorrectionLevel: "H" // Höchste Fehlertoleranzstufe (30% können verdeckt werden)
+      }
+    });
+
+    // Füge den generierten QR-Code in das HTML-Element ein
+    qrCode.append(document.getElementById("qrcode"));
+
+    const qrElement = document.getElementById("qrcode").querySelector("canvas");
+
+    if (qrElement) {
+      const ctx = qrElement.getContext("2d");
+
+      // Feste Positionen für den Text
+      const topTextY = 30; // Feste Position für den oberen Text (Triggerwarnung) etwas weiter nach unten
+      const bottomTextY = qrElement.height - 30; // Feste Position für den unteren Text, leicht nach oben verschoben
+
+
+      // Zeichne das Logo und den unteren Text (unabhängig von Triggerwarnung)
+      const logo = new Image();
+      logo.src = "images/shooting-target-color-icon.png"; // Logo-URL
+      logo.onload = function() {
+        const logoSize = 60; // Größe des Logos
+        const x = (qrElement.width - logoSize) / 2; // Zentriert das Logo
+        const y = (qrElement.height - logoSize) / 2; // Zentriert das Logo
+        ctx.drawImage(logo, x, y, logoSize, logoSize); // Zeichnet das Logo
+
+        // Füge Text unterhalb des QR-Codes hinzu
+        const text = "PixelJagd"; // Der gewünschte Text
+        const fontSize = 20; // Schriftgröße
+
+        // Zeichne den unteren Text immer an der gleichen Position
+        ctx.font = `bold ${fontSize}px Arial`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+
+        // Berechne den Farbverlauf
+        const gradient = ctx.createLinearGradient(0, bottomTextY, qrElement.width, bottomTextY);
+        gradient.addColorStop(0, "rgb(25, 131, 225)");
+        gradient.addColorStop(1, "rgba(1,47,95,1)");
+
+        // Füge Farbverlauf für den Text ein
+        ctx.fillStyle = gradient;
+
+        // Zeichne den Text mit Umrandung
+        ctx.strokeStyle = "#ffffff"; // Weiße Umrandung
+        ctx.lineWidth = 5; // Dicke der Umrandung
+        ctx.strokeText(text, qrElement.width / 2, bottomTextY); // Zeichne die Umrandung
+        ctx.fillText(text, qrElement.width / 2, bottomTextY); // Zeichne den gefüllten Text
+      };
+    }
+
+    // Download-Button für PNG
+    document.getElementById("downloadPng").addEventListener("click", function() {
+      qrCode.download({
+        name: "qr-code",
+        extension: "png"
+      });
+    });
+
+    // Download-Button für SVG
+    document.getElementById("downloadSvg").addEventListener("click", function() {
+      qrCode.download({
+        name: "qr-code",
+        extension: "svg"
+      });
+    });
+  });
+</script>
