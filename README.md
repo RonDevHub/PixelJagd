@@ -1,5 +1,7 @@
 # 🎯 PixelJagd
 
+<img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=stars&owner=RonDevHub&repo=PixelJagd" alt="Stars"> <img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=license&owner=RonDevHub&repo=PixelJagd" alt="Stars"> <img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=top_language&owner=RonDevHub&repo=PixelJagd" alt="Stars">
+
 **Willkommen zur wohl kleinsten Schnitzeljagd im Internet.**  
 Ein Pixel. Eine Mission. Ein bisschen Wahnsinn. Und jede Menge Spaß. 😄
 
@@ -58,5 +60,5 @@ Meld dich gern! Die Pixel warten schon.
 
 ---
 
-> _Ein Projekt von RonDev – mit <img src="https://mini-badges.rondevhub.de/icon/bootstrap/Bootstrap_5-7552cc/flat">, <img src="https://mini-badges.rondevhub.de/icon/js/JavaScript-ffd900-black/flat">, <img src="https://mini-badges.rondevhub.de/icon/phpelephant/PHP-ffd900-black/flat"> und einer ordentlichen Portion Unsinn._
+> _Ein Projekt von RonDev – mit <img src="https://mini-badges.rondevhub.de/icon/bootstrap/Bootstrap_5-7552cc/flat">, <img src="https://mini-badges.rondevhub.de/icon/js/JavaScript-ffd900-black/flat">, <img src="https://mini-badges.rondevhub.de/icon/phpelephant-fff/PHP-0077c8/flat"> und einer ordentlichen Portion Unsinn._
 
