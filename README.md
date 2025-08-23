@@ -58,5 +58,5 @@ Meld dich gern! Die Pixel warten schon.
 
 ---
 
-> _Ein Projekt von RonDev – mit <img src="https://mini-badges.rondevhub.de/icon/bootstrap/Bootstrap_5-7552cc/flat">, <img src="https://mini-badges.rondevhub.de/icon/js/JavaScript-7552cc/flat">, PHP und einer ordentlichen Portion Unsinn._
+> _Ein Projekt von RonDev – mit <img src="https://mini-badges.rondevhub.de/icon/bootstrap/Bootstrap_5-7552cc/flat">, <img src="https://mini-badges.rondevhub.de/icon/js/JavaScript-ffd900-black/flat">, <img src="https://mini-badges.rondevhub.de/icon/phpelephant/PHP-ffd900-black/flat"> und einer ordentlichen Portion Unsinn._
 
