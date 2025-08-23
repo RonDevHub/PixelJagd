@@ -1,6 +1,8 @@
 # 🎯 PixelJagd
 
-<img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=stars&owner=RonDevHub&repo=PixelJagd" alt="Stars"> <img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=license&owner=RonDevHub&repo=PixelJagd" alt="Stars"> <img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=top_language&owner=RonDevHub&repo=PixelJagd" alt="Stars">
+<img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=stars&owner=RonDevHub&repo=PixelJagd" alt="Stars"> <img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=license&owner=RonDevHub&repo=PixelJagd" alt="license"> <img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=top_language&owner=RonDevHub&repo=PixelJagd" alt="top_language"> <img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=release&owner=RonDevHub&repo=PixelJagd" alt="release"> ![GitHub Repo release](https://mini-badges.rondevhub.de/static/RonDevHub♥️/PHP)
+
+<a href="https://www.buymeacoffee.com/RonDev" target="_blank">![Buy me a coffee](https://mini-badges.rondevhub.de/icon/cuptogo/By_me_a_Coffee-0077b5/flat)</a>  <a href='https://ko-fi.com/U6U31EV2VS' target='_blank'>![Buy me a coffee](https://mini-badges.rondevhub.de/badge.php?type=icon&icon=cuptogo&textIconRight=ko-fi.com&color2=0077b5)</a>
 
 **Willkommen zur wohl kleinsten Schnitzeljagd im Internet.**  
 Ein Pixel. Eine Mission. Ein bisschen Wahnsinn. Und jede Menge Spaß. 😄
