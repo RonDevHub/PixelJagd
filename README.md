@@ -1,8 +1,8 @@
 # 🎯 PixelJagd
 
-<img src="https://mini-badges.rondevhub.de/github/RonDevHub/PixelJagd/stars" alt="Stars"> <img src="https://mini-badges.rondevhub.de/github/RonDevHub/PixelJagd/license" alt="license"> <img src="https://mini-badges.rondevhub.de/github/RonDevHub/PixelJagd/top_language_count" alt="top_language"> <img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=issues&owner=RonDevHub&repo=PixelJagd&colorMessage=fd5c63" alt="issues"> <img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=release&owner=RonDevHub&repo=PixelJagd" alt="release"> <img src="https://mini-badges.rondevhub.de/badge.php?type=github&metric=branches&owner=RonDevHub&repo=PixelJagd" alt="release"> ![GitHub Repo release](https://mini-badges.rondevhub.de/static/RonDevHub♥️/PHP)
+<img src="https://mini-badges.rondev.de/github/rondev/PixelJagd/stars" alt="Stars"> <img src="https://mini-badges.rondev.de/github/rondev/PixelJagd/license" alt="license"> <img src="https://mini-badges.rondev.de/github/rondev/PixelJagd/top_language_count" alt="top_language"> <img src="https://mini-badges.rondev.de/badge.php?type=github&metric=issues&owner=rondev&repo=PixelJagd&colorMessage=fd5c63" alt="issues"> <img src="https://mini-badges.rondev.de/badge.php?type=github&metric=release&owner=rondev&repo=PixelJagd" alt="release"> <img src="https://mini-badges.rondev.de/badge.php?type=github&metric=branches&owner=rondev&repo=PixelJagd" alt="release"> ![GitHub Repo release](https://mini-badges.rondev.de/static/rondev♥️/PHP)
 
-<a href="https://www.buymeacoffee.com/RonDev" target="_blank">![Buy me a coffee](https://mini-badges.rondevhub.de/icon/cuptogo/By_me_a_Coffee-0077b5/flat)</a>  <a href='https://ko-fi.com/U6U31EV2VS' target='_blank'>![Buy me a coffee](https://mini-badges.rondevhub.de/badge.php?type=icon&icon=cuptogo&textIconRight=ko-fi.com&color2=0077b5)</a>
+<a href="https://www.buymeacoffee.com/RonDev" target="_blank">![Buy me a coffee](https://mini-badges.rondev.de/icon/cuptogo/By_me_a_Coffee-0077b5/flat)</a>  <a href='https://ko-fi.com/U6U31EV2VS' target='_blank'>![Buy me a coffee](https://mini-badges.rondev.de/badge.php?type=icon&icon=cuptogo&textIconRight=ko-fi.com&color2=0077b5)</a>
 
 **Willkommen zur wohl kleinsten Schnitzeljagd im Internet.**  
 Ein Pixel. Eine Mission. Ein bisschen Wahnsinn. Und jede Menge Spaß. 😄
@@ -50,7 +50,7 @@ Und weil du wahrscheinlich gerade sowieso etwas aufschieben willst.
 
 ## 🔗 Jetzt ausprobieren
 
-👉 **<a href="https://pixeljagd.rondevhub.de" target="_blank">Hier geht’s zur PixelJagd</a>**  
+👉 **<a href="https://pixeljagd.rondev.de" target="_blank">Hier geht’s zur PixelJagd</a>**  
 Aber Vorsicht: Der Pixel versteckt sich gut.
 
 ---
@@ -62,4 +62,4 @@ Meld dich gern! Die Pixel warten schon.
 
 ---
 
-> _Ein Projekt von RonDev – mit <img src="https://mini-badges.rondevhub.de/icon/bootstrap/Bootstrap_5-7552cc/flat">, <img src="https://mini-badges.rondevhub.de/icon/js/JavaScript-ffd900-black/flat">, <img src="https://mini-badges.rondevhub.de/icon/phpelephant-fff/PHP-0077c8/flat"> und einer ordentlichen Portion Unsinn._
+> _Ein Projekt von RonDev – mit <img src="https://mini-badges.rondev.de/icon/bootstrap/Bootstrap_5-7552cc/flat">, <img src="https://mini-badges.rondev.de/icon/js/JavaScript-ffd900-black/flat">, <img src="https://mini-badges.rondev.de/icon/phpelephant-fff/PHP-0077c8/flat"> und einer ordentlichen Portion Unsinn._
